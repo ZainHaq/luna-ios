@@ -14,6 +14,7 @@
 		F11CD2A51D3B1CCC00901411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */; };
 		F11CD2B01D3B1CCC00901411 /* LunaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD2AF1D3B1CCC00901411 /* LunaTests.swift */; };
 		F11CD2BB1D3B1CCC00901411 /* LunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD2BA1D3B1CCC00901411 /* LunaUITests.swift */; };
+		F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F11CD2B61D3B1CCC00901411 /* LunaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD2BA1D3B1CCC00901411 /* LunaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaUITests.swift; sourceTree = "<group>"; };
 		F11CD2BC1D3B1CCC00901411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhasesDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F11CD2A11D3B1CCC00901411 /* Assets.xcassets */,
 				F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */,
 				F11CD2A61D3B1CCC00901411 /* Info.plist */,
+				F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */,
 			);
 			path = Luna;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */,
+				F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */,
 				F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				F11CD2C11D3B1CCC00901411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F11CD2C21D3B1CCC00901411 /* Build configuration list for PBXNativeTarget "LunaTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				F11CD2C41D3B1CCC00901411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F11CD2C51D3B1CCC00901411 /* Build configuration list for PBXNativeTarget "LunaUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				F11CD2C71D3B1CCC00901411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

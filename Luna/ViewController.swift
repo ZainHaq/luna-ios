@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    private lazy var dataSource: PhasesDataSource = {
+        
+        return PhasesDataSource()
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // connect data source with table view
+        dataSource.configureUsing(tableView)
     }
 
     override func didReceiveMemoryWarning() {
