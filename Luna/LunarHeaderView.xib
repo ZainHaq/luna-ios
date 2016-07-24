@@ -133,6 +133,7 @@
                 <outlet property="riseLabel" destination="lQv-lz-bZA" id="9Bh-ca-ihs"/>
                 <outlet property="setLabel" destination="f7w-ZD-DQt" id="eW8-8l-BJi"/>
             </connections>
+            <point key="canvasLocation" x="91" y="302"/>
         </view>
     </objects>
 </document>

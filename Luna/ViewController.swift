@@ -11,9 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+
+    private let model = LunarPhaseModel()
     
     private lazy var dataSource: PhasesDataSource = {
-        return PhasesDataSource()
+        return PhasesDataSource(model: self.model)
     }()
 
     private lazy var headerView: LunarHeaderView = {
@@ -21,6 +23,8 @@ class ViewController: UIViewController {
         guard let headerView = nib.first as? LunarHeaderView else {
             fatalError("Could not load LunarHeaderView from nib")
         }
+
+        headerView.frame = CGRect(x:0,y:0,width:100,height:100)
 
         return headerView
     }()
@@ -37,7 +41,7 @@ class ViewController: UIViewController {
     }
 
     override func viewDidLayoutSubviews() {
-        tableView.tableHeaderView = self.headerView
+        //tableView.tableHeaderView = self.headerView
     }
 }
 

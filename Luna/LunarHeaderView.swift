@@ -27,5 +27,7 @@ class LunarHeaderView: UIView {
         self.moonIlluminationLabel.text = ""
         self.setLabel.text = ""
         self.riseLabel.text = ""
+
+        self.backgroundColor = UIColor.blueColor()
     }
 }

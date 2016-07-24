@@ -12,12 +12,21 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
 
     weak var tableView: UITableView? {
         didSet {
-            self.tableView?.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+            self.tableView?.registerClass(PhaseTableViewCell.self, forCellReuseIdentifier: "Cell")
 
             self.tableView?.dataSource = self
             self.tableView?.reloadData()
 
         }
+    }
+
+    private var phases: [Phase] = []
+
+    private let model: LunarPhaseModel
+
+    init(model: LunarPhaseModel) {
+        self.model = model
+        super.init()
     }
 
     func configureUsing(tableView: UITableView) {
@@ -35,8 +44,16 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel?.text = "Moon Phase Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PhaseTableViewCell
+        cell.viewModel = viewModelForIndexPath(indexPath)
         return cell
+    }
+
+    // MARK: - Private
+
+    func viewModelForIndexPath(indexPath: NSIndexPath) -> PhaseViewModel {
+        let phase = self.phases[indexPath.row] as Phase
+        let viewModel = PhaseViewModel(phase: phase)
+        return viewModel
     }
 }

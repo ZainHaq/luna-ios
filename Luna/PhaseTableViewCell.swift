@@ -13,6 +13,13 @@ class PhaseTableViewCell: UITableViewCell {
     @IBOutlet weak var iconLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
 
+    var viewModel: PhaseViewModel? {
+        didSet {
+            self.iconLabel.text = viewModel?.icon
+            self.dateLabel.text = viewModel?.date
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
 
