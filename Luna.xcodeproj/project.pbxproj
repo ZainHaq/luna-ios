@@ -26,6 +26,8 @@
 		F173DDA31D45789F006406E9 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173DDA21D45789F006406E9 /* Moon.swift */; };
 		F173DDA51D4578B7006406E9 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173DDA41D4578B7006406E9 /* Phase.swift */; };
 		F173DDA71D457AA6006406E9 /* PhaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173DDA61D457AA6006406E9 /* PhaseViewModel.swift */; };
+		F173DDA91D45930B006406E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173DDA81D45930B006406E9 /* Result.swift */; };
+		F173DDAB1D459401006406E9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173DDAA1D459401006406E9 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		F173DDA21D45789F006406E9 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Moon.swift; path = ../Moon.swift; sourceTree = "<group>"; };
 		F173DDA41D4578B7006406E9 /* Phase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Phase.swift; path = ../Phase.swift; sourceTree = "<group>"; };
 		F173DDA61D457AA6006406E9 /* PhaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhaseViewModel.swift; sourceTree = "<group>"; };
+		F173DDA81D45930B006406E9 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F173DDAA1D459401006406E9 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		F11CD2991D3B1CCB00901411 /* Luna */ = {
 			isa = PBXGroup;
 			children = (
+				F159C9651D446FD300CE5D7F /* weathericons-regular-webfont.ttf */,
 				F173DDA41D4578B7006406E9 /* Phase.swift */,
 				F173DDA01D45783E006406E9 /* LunarPhaseModel.swift */,
 				F173DDA21D45789F006406E9 /* Moon.swift */,
@@ -134,7 +139,8 @@
 				F159C95D1D445E6400CE5D7F /* LunarHeaderView.xib */,
 				F159C95F1D44627600CE5D7F /* LunarHeaderView.swift */,
 				F11CD29E1D3B1CCC00901411 /* Main.storyboard */,
-				F159C9651D446FD300CE5D7F /* weathericons-regular-webfont.ttf */,
+				F173DDA81D45930B006406E9 /* Result.swift */,
+				F173DDAA1D459401006406E9 /* NetworkError.swift */,
 				F11CD2A11D3B1CCC00901411 /* Assets.xcassets */,
 				F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */,
 				F11CD2A61D3B1CCC00901411 /* Info.plist */,
@@ -301,9 +307,11 @@
 				F159C9641D446E9800CE5D7F /* PhaseTableViewCell.swift in Sources */,
 				F159C9681D44718C00CE5D7F /* String+WeatherIcons.swift in Sources */,
 				F159C96A1D44727200CE5D7F /* Double+WeatherIcons.swift in Sources */,
+				F173DDA91D45930B006406E9 /* Result.swift in Sources */,
 				F173DDA11D45783E006406E9 /* LunarPhaseModel.swift in Sources */,
 				F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */,
 				F173DDA51D4578B7006406E9 /* Phase.swift in Sources */,
+				F173DDAB1D459401006406E9 /* NetworkError.swift in Sources */,
 				F159C9601D44627600CE5D7F /* LunarHeaderView.swift in Sources */,
 				F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */,
 			);

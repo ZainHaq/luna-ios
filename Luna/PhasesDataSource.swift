@@ -12,11 +12,11 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
 
     weak var tableView: UITableView? {
         didSet {
-            self.tableView?.registerClass(PhaseTableViewCell.self, forCellReuseIdentifier: "Cell")
+            let nib = UINib(nibName: "PhaseTableViewCell", bundle: nil)
+            self.tableView?.registerNib(nib, forCellReuseIdentifier: "Cell")
 
             self.tableView?.dataSource = self
             self.tableView?.reloadData()
-
         }
     }
 
@@ -26,6 +26,7 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
 
     init(model: LunarPhaseModel) {
         self.model = model
+        self.phases = model.currentPhases()
         super.init()
     }
 
@@ -40,7 +41,7 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

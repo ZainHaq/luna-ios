@@ -24,8 +24,6 @@ class ViewController: UIViewController {
             fatalError("Could not load LunarHeaderView from nib")
         }
 
-        headerView.frame = CGRect(x:0,y:0,width:100,height:100)
-
         return headerView
     }()
 

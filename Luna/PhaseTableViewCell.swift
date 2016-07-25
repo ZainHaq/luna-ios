@@ -10,8 +10,8 @@ import UIKit
 
 class PhaseTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var iconLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet var iconLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
 
     var viewModel: PhaseViewModel? {
         didSet {
@@ -25,6 +25,8 @@ class PhaseTableViewCell: UITableViewCell {
 
         self.iconLabel.text = ""
         self.dateLabel.text = ""
+
+        self.iconLabel.font = UIFont(name: "Weather Icons", size: 32.0)
 
         self.selectionStyle = UITableViewCellSelectionStyle.None
     }
