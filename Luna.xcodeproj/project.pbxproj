@@ -14,6 +14,7 @@
 		F11CD2A51D3B1CCC00901411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */; };
 		F11CD2B01D3B1CCC00901411 /* LunaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD2AF1D3B1CCC00901411 /* LunaTests.swift */; };
 		F11CD2BB1D3B1CCC00901411 /* LunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD2BA1D3B1CCC00901411 /* LunaUITests.swift */; };
+		F132C8451D4ED0D400A35D18 /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132C8441D4ED0D400A35D18 /* LocationTracker.swift */; };
 		F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */; };
 		F159C95E1D445E6400CE5D7F /* LunarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F159C95D1D445E6400CE5D7F /* LunarHeaderView.xib */; };
 		F159C9601D44627600CE5D7F /* LunarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159C95F1D44627600CE5D7F /* LunarHeaderView.swift */; };
@@ -61,6 +62,7 @@
 		F11CD2B61D3B1CCC00901411 /* LunaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD2BA1D3B1CCC00901411 /* LunaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaUITests.swift; sourceTree = "<group>"; };
 		F11CD2BC1D3B1CCC00901411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F132C8441D4ED0D400A35D18 /* LocationTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
 		F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhasesDataSource.swift; sourceTree = "<group>"; };
 		F159C95D1D445E6400CE5D7F /* LunarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunarHeaderView.xib; sourceTree = "<group>"; };
 		F159C95F1D44627600CE5D7F /* LunarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunarHeaderView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */,
 				F11CD2A61D3B1CCC00901411 /* Info.plist */,
 				F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */,
+				F132C8441D4ED0D400A35D18 /* LocationTracker.swift */,
 			);
 			path = Luna;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				F173DDA91D45930B006406E9 /* Result.swift in Sources */,
 				F173DDA11D45783E006406E9 /* LunarPhaseModel.swift in Sources */,
 				F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */,
+				F132C8451D4ED0D400A35D18 /* LocationTracker.swift in Sources */,
 				F173DDA51D4578B7006406E9 /* Phase.swift in Sources */,
 				F173DDAB1D459401006406E9 /* NetworkError.swift in Sources */,
 				F159C9601D44627600CE5D7F /* LunarHeaderView.swift in Sources */,
