@@ -21,12 +21,12 @@ class LunarHeaderView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        self.phaseIconLabel.text = ""
-        self.phaseNameLabel.text = ""
-        self.moonAgeLabel.text = ""
-        self.moonIlluminationLabel.text = ""
-        self.setLabel.text = ""
-        self.riseLabel.text = ""
+        self.phaseIconLabel.text = "hhhhhh"
+        self.phaseNameLabel.text = "hhhhhh"
+        self.moonAgeLabel.text = "hhhhhh"
+        self.moonIlluminationLabel.text = "hhhhhh"
+        self.setLabel.text = "hhhhhh"
+        self.riseLabel.text = "hhhhhh"
 
         self.backgroundColor = UIColor.blueColor()
     }
