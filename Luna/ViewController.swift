@@ -34,12 +34,11 @@ class ViewController: UIViewController {
         dataSource.configureUsing(tableView)
 
         tableView.pagingEnabled = true
-        tableView.rowHeight = 44.0
         
+        headerView.heightAnchor.constraintEqualToConstant(self.view.bounds.height).active = true
+        tableView.tableHeaderView = self.headerView
+
     }
 
-    override func viewDidLayoutSubviews() {
-        //tableView.tableHeaderView = self.headerView
-    }
 }
 
