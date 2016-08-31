@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFE1B1161D765FF1008B4347 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1151D765FF1008B4347 /* NetworkController.swift */; };
+		BFE1B1181D775AEF008B4347 /* NSData+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1171D775AEF008B4347 /* NSData+JSON.swift */; };
 		F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */; };
 		F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29C1D3B1CCB00901411 /* ViewController.swift */; };
 		F11CD2A01D3B1CCC00901411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD29E1D3B1CCC00901411 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BFE1B1151D765FF1008B4347 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		BFE1B1171D775AEF008B4347 /* NSData+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+JSON.swift"; sourceTree = "<group>"; };
 		F11CD2971D3B1CCB00901411 /* Luna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11CD29C1D3B1CCB00901411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				F11CD2A61D3B1CCC00901411 /* Info.plist */,
 				F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */,
 				F132C8441D4ED0D400A35D18 /* LocationTracker.swift */,
+				BFE1B1151D765FF1008B4347 /* NetworkController.swift */,
+				BFE1B1171D775AEF008B4347 /* NSData+JSON.swift */,
 			);
 			path = Luna;
 			sourceTree = "<group>";
@@ -309,12 +315,14 @@
 				F173DDA31D45789F006406E9 /* Moon.swift in Sources */,
 				F159C9641D446E9800CE5D7F /* PhaseTableViewCell.swift in Sources */,
 				F159C9681D44718C00CE5D7F /* String+WeatherIcons.swift in Sources */,
+				BFE1B1161D765FF1008B4347 /* NetworkController.swift in Sources */,
 				F159C96A1D44727200CE5D7F /* Double+WeatherIcons.swift in Sources */,
 				F173DDA91D45930B006406E9 /* Result.swift in Sources */,
 				F173DDA11D45783E006406E9 /* LunarPhaseModel.swift in Sources */,
 				F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */,
 				F132C8451D4ED0D400A35D18 /* LocationTracker.swift in Sources */,
 				F173DDA51D4578B7006406E9 /* Phase.swift in Sources */,
+				BFE1B1181D775AEF008B4347 /* NSData+JSON.swift in Sources */,
 				F173DDAB1D459401006406E9 /* NetworkError.swift in Sources */,
 				F159C9601D44627600CE5D7F /* LunarHeaderView.swift in Sources */,
 				F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */,

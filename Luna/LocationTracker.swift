@@ -23,7 +23,7 @@ public struct Location {
 public typealias LocationResult = Result<Location>
 public typealias Observer = (location: LocationResult) -> ()
 
-class LocationTracke: NSObject, CLLocationManagerDelegate {
+class LocationTracker: NSObject, CLLocationManagerDelegate {
     private var lastResult: LocationResult = .Failure(LocationError.NoData)
     private var observers: [Observer] = []
 
