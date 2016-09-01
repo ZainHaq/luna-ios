@@ -12,6 +12,8 @@
 		BFE1B11A1D77B8A7008B4347 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1191D77B8A7008B4347 /* API.swift */; };
 		BFE1B11C1D77BADD008B4347 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11B1D77BADD008B4347 /* Request.swift */; };
 		BFE1B11E1D77BCD4008B4347 /* QueryParamaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */; };
+		BFE1B1201D77CC84008B4347 /* LunarPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11F1D77CC84008B4347 /* LunarPhaseView.swift */; };
+		BFE1B1221D77CCDE008B4347 /* NSDate+Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1211D77CCDE008B4347 /* NSDate+Phase.swift */; };
 		F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */; };
 		F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29C1D3B1CCB00901411 /* ViewController.swift */; };
 		F11CD2A01D3B1CCC00901411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD29E1D3B1CCC00901411 /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 		BFE1B1191D77B8A7008B4347 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		BFE1B11B1D77BADD008B4347 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParamaters.swift; sourceTree = "<group>"; };
+		BFE1B11F1D77CC84008B4347 /* LunarPhaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunarPhaseView.swift; sourceTree = "<group>"; };
+		BFE1B1211D77CCDE008B4347 /* NSDate+Phase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Phase.swift"; sourceTree = "<group>"; };
 		F11CD2971D3B1CCB00901411 /* Luna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11CD29C1D3B1CCB00901411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				F173DDA01D45783E006406E9 /* LunarPhaseModel.swift */,
 				F173DDA21D45789F006406E9 /* Moon.swift */,
 				F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */,
+				BFE1B1211D77CCDE008B4347 /* NSDate+Phase.swift */,
 				F11CD29C1D3B1CCB00901411 /* ViewController.swift */,
 				F159C9691D44727200CE5D7F /* Double+WeatherIcons.swift */,
 				F159C9611D446DE900CE5D7F /* PhaseTableViewCell.xib */,
@@ -153,6 +158,7 @@
 				F159C9671D44718C00CE5D7F /* String+WeatherIcons.swift */,
 				F159C95D1D445E6400CE5D7F /* LunarHeaderView.xib */,
 				F159C95F1D44627600CE5D7F /* LunarHeaderView.swift */,
+				BFE1B11F1D77CC84008B4347 /* LunarPhaseView.swift */,
 				F11CD29E1D3B1CCC00901411 /* Main.storyboard */,
 				F173DDA81D45930B006406E9 /* Result.swift */,
 				F173DDAA1D459401006406E9 /* NetworkError.swift */,
@@ -320,12 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */,
+				BFE1B1201D77CC84008B4347 /* LunarPhaseView.swift in Sources */,
 				F173DDA71D457AA6006406E9 /* PhaseViewModel.swift in Sources */,
 				F173DDA31D45789F006406E9 /* Moon.swift in Sources */,
 				F159C9641D446E9800CE5D7F /* PhaseTableViewCell.swift in Sources */,
 				F159C9681D44718C00CE5D7F /* String+WeatherIcons.swift in Sources */,
 				BFE1B1161D765FF1008B4347 /* NetworkController.swift in Sources */,
 				BFE1B11E1D77BCD4008B4347 /* QueryParamaters.swift in Sources */,
+				BFE1B1221D77CCDE008B4347 /* NSDate+Phase.swift in Sources */,
 				F159C96A1D44727200CE5D7F /* Double+WeatherIcons.swift in Sources */,
 				BFE1B11C1D77BADD008B4347 /* Request.swift in Sources */,
 				F173DDA91D45930B006406E9 /* Result.swift in Sources */,

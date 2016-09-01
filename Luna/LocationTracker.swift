@@ -70,8 +70,8 @@ class LocationTracker: NSObject, CLLocationManagerDelegate {
                 let location = Location(physical: currentLocation, city: "", state: "", neighborhood: "")
 
                 let result = LocationResult.Success(location)
-                self.publishChangeWithResult(result)
                 self.lastResult = result
+                self.publishChangeWithResult(result)
             }
 
             // location hasn't changed significantly
