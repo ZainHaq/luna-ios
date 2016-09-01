@@ -30,7 +30,7 @@ struct Moon {
     }
 }
 
-extension Moon {
+extension Moon: Equatable {
     static func moonFromJSON(json: JSON) -> MoonResult {
         guard
             let response = json["response"] as? [JSON],
@@ -55,9 +55,9 @@ extension Moon {
     }
 }
 
-extension Moon: Equatable { }
 
 func ==(lhs: Moon, rhs: Moon) -> Bool {
     return lhs.phase == rhs.phase && lhs.age == rhs.age &&
         lhs.rise == lhs.rise && lhs.set == lhs.set
 }
+
