@@ -11,6 +11,7 @@ import Foundation
 
 class LunarHeaderView: UIView {
     
+    @IBOutlet weak var phaseView: LunarPhaseView!
     @IBOutlet weak var moonAgeLabel: UILabel!
     @IBOutlet weak var phaseNameLabel: UILabel!
     @IBOutlet weak var moonIlluminationLabel: UILabel!
@@ -22,8 +23,8 @@ class LunarHeaderView: UIView {
             self.riseLabel.text = viewModel?.rise
             self.setLabel.text = viewModel?.set
             
-            self.ageLabel.text = viewModel?.age
-            self.illuminationLabel.text = viewModel?.illumination
+            self.moonAgeLabel.text = viewModel?.age
+            self.moonIlluminationLabel.text = viewModel?.illumination
             
             if let phase = viewModel?.phase {
                 guard let font = UIFont(name: "EuphemiaUCAS", size: 38.0) else { fatalError() }
@@ -41,7 +42,7 @@ class LunarHeaderView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        self.phaseIconLabel.alpha = 0.0
+        self.phaseView.alpha = 0.0
         self.phaseNameLabel.text = "Loading..."
         self.moonAgeLabel.text = ""
         self.moonIlluminationLabel.text = ""

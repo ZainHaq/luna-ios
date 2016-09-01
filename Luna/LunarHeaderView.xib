@@ -10,12 +10,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="602"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phase Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haw-k0-mGP">
-                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moon Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSH-cF-Lji">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -46,31 +40,53 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNE-ri-rbX" customClass="LunarPhaseView" customModule="Luna" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="50y-DK-V3p"/>
+                        <constraint firstAttribute="height" constant="161" id="gyJ-yC-RVU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="50y-DK-V3p"/>
+                            <exclude reference="gyJ-yC-RVU"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="50y-DK-V3p"/>
+                            <include reference="gyJ-yC-RVU"/>
+                        </mask>
+                    </variation>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="qSH-cF-Lji" firstAttribute="top" secondItem="L6X-f1-XVh" secondAttribute="bottom" constant="8" id="Efe-oS-o56">
-                    <variation key="widthClass=compact" constant="8" symbolic="YES"/>
+                <constraint firstItem="DNE-ri-rbX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="9nh-0z-65g">
+                    <variation key="widthClass=compact" constant="20" symbolic="YES"/>
                 </constraint>
-                <constraint firstItem="L6X-f1-XVh" firstAttribute="top" secondItem="haw-k0-mGP" secondAttribute="bottom" constant="7" id="FAZ-gC-abp">
+                <constraint firstItem="qSH-cF-Lji" firstAttribute="top" secondItem="L6X-f1-XVh" secondAttribute="bottom" constant="8" id="Efe-oS-o56">
                     <variation key="widthClass=compact" constant="8" symbolic="YES"/>
                 </constraint>
                 <constraint firstItem="csl-9U-cwt" firstAttribute="centerX" secondItem="qSH-cF-Lji" secondAttribute="centerX" id="KRX-oz-hGG"/>
                 <constraint firstItem="f7w-ZD-DQt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Mlh-XB-C3Z">
                     <variation key="widthClass=compact" constant="20" symbolic="YES"/>
                 </constraint>
-                <constraint firstItem="haw-k0-mGP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d1p-yW-jTf"/>
+                <constraint firstItem="DNE-ri-rbX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RB8-Ex-Pgn"/>
                 <constraint firstItem="csl-9U-cwt" firstAttribute="top" secondItem="qSH-cF-Lji" secondAttribute="bottom" constant="8" id="dE5-SR-uo5">
                     <variation key="widthClass=compact" constant="8" symbolic="YES"/>
                 </constraint>
                 <constraint firstItem="lQv-lz-bZA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="gJa-E1-ZRX">
                     <variation key="widthClass=compact" constant="20" symbolic="YES"/>
                 </constraint>
-                <constraint firstItem="L6X-f1-XVh" firstAttribute="centerX" secondItem="haw-k0-mGP" secondAttribute="centerX" id="pw2-iW-Hhq"/>
-                <constraint firstItem="haw-k0-mGP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="r4s-rd-BLW"/>
+                <constraint firstItem="L6X-f1-XVh" firstAttribute="top" secondItem="DNE-ri-rbX" secondAttribute="bottom" constant="8" id="qGM-ZP-8Qz">
+                    <variation key="widthClass=compact" constant="8" symbolic="YES"/>
+                </constraint>
                 <constraint firstItem="lQv-lz-bZA" firstAttribute="top" secondItem="f7w-ZD-DQt" secondAttribute="bottom" constant="8" id="vf7-oh-DQ0">
                     <variation key="widthClass=compact" constant="8" symbolic="YES"/>
                 </constraint>
+                <constraint firstItem="L6X-f1-XVh" firstAttribute="centerX" secondItem="DNE-ri-rbX" secondAttribute="centerX" id="w5Y-PG-edY"/>
                 <constraint firstAttribute="bottom" secondItem="lQv-lz-bZA" secondAttribute="bottom" constant="20" id="xXV-8d-JxC">
                     <variation key="widthClass=compact" constant="20" symbolic="YES"/>
                 </constraint>
@@ -79,57 +95,57 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="haw-k0-mGP"/>
                     <exclude reference="qSH-cF-Lji"/>
                     <exclude reference="f7w-ZD-DQt"/>
                     <exclude reference="lQv-lz-bZA"/>
                     <exclude reference="L6X-f1-XVh"/>
                     <exclude reference="csl-9U-cwt"/>
+                    <exclude reference="DNE-ri-rbX"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="FAZ-gC-abp"/>
-                    <exclude reference="pw2-iW-Hhq"/>
+                    <exclude reference="qGM-ZP-8Qz"/>
+                    <exclude reference="w5Y-PG-edY"/>
                     <exclude reference="KRX-oz-hGG"/>
                     <exclude reference="dE5-SR-uo5"/>
                     <exclude reference="Mlh-XB-C3Z"/>
-                    <exclude reference="d1p-yW-jTf"/>
-                    <exclude reference="r4s-rd-BLW"/>
                     <exclude reference="gJa-E1-ZRX"/>
                     <exclude reference="vf7-oh-DQ0"/>
                     <exclude reference="xXV-8d-JxC"/>
                     <exclude reference="Efe-oS-o56"/>
                     <exclude reference="yBA-8y-iI9"/>
+                    <exclude reference="9nh-0z-65g"/>
+                    <exclude reference="RB8-Ex-Pgn"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
-                    <include reference="haw-k0-mGP"/>
                     <include reference="qSH-cF-Lji"/>
                     <include reference="f7w-ZD-DQt"/>
                     <include reference="lQv-lz-bZA"/>
                     <include reference="L6X-f1-XVh"/>
                     <include reference="csl-9U-cwt"/>
+                    <include reference="DNE-ri-rbX"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="FAZ-gC-abp"/>
-                    <include reference="pw2-iW-Hhq"/>
+                    <include reference="qGM-ZP-8Qz"/>
+                    <include reference="w5Y-PG-edY"/>
                     <include reference="KRX-oz-hGG"/>
                     <include reference="dE5-SR-uo5"/>
                     <include reference="Mlh-XB-C3Z"/>
-                    <include reference="d1p-yW-jTf"/>
-                    <include reference="r4s-rd-BLW"/>
                     <include reference="gJa-E1-ZRX"/>
                     <include reference="vf7-oh-DQ0"/>
                     <include reference="xXV-8d-JxC"/>
                     <include reference="Efe-oS-o56"/>
                     <include reference="yBA-8y-iI9"/>
+                    <include reference="9nh-0z-65g"/>
+                    <include reference="RB8-Ex-Pgn"/>
                 </mask>
             </variation>
             <connections>
                 <outlet property="moonAgeLabel" destination="qSH-cF-Lji" id="Ba8-ru-BeD"/>
                 <outlet property="moonIlluminationLabel" destination="csl-9U-cwt" id="kTX-Xh-2uz"/>
-                <outlet property="phaseIconLabel" destination="haw-k0-mGP" id="L70-4K-hh6"/>
                 <outlet property="phaseNameLabel" destination="L6X-f1-XVh" id="qe0-Iq-sZh"/>
+                <outlet property="phaseView" destination="DNE-ri-rbX" id="u0P-SG-LZf"/>
                 <outlet property="riseLabel" destination="lQv-lz-bZA" id="9Bh-ca-ihs"/>
                 <outlet property="setLabel" destination="f7w-ZD-DQt" id="eW8-8l-BJi"/>
             </connections>

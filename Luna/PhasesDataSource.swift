@@ -26,8 +26,9 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
 
     init(model: LunarPhaseModel) {
         self.model = model
-        self.phases = model.currentPhases()
         super.init()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(phasesDidUpdate), name: PhasesDidUpdateNotification, object: nil)
     }
 
     func configureUsing(tableView: UITableView) {
@@ -41,12 +42,20 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return self.phases.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! PhaseTableViewCell
         cell.viewModel = viewModelForIndexPath(indexPath)
+//        
+//        if indexPath.row == self.phases.count - 1 {
+//            cell.separatorInset = UIEdgeInsetsMake(0, cell.bounds.size.width, 0.0, 0.0)
+//        }
+//        else {
+//            cell.separatorInset = UIEdgeInsetsMake(0.0, 16.0, 0.0, 16.0)
+//        }
+        
         return cell
     }
 
@@ -56,5 +65,16 @@ class PhasesDataSource: NSObject, UITableViewDataSource {
         let phase = self.phases[indexPath.row] as Phase
         let viewModel = PhaseViewModel(phase: phase)
         return viewModel
+    }
+    
+    func phasesDidUpdate() -> Void {
+        let result = self.model.currentPhases
+        switch result {
+        case .Success(let phases):
+            self.phases = phases
+            self.tableView?.reloadData()
+        case .Failure:
+            print("error updating phases, no data")
+        }
     }
 }

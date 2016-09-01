@@ -14,11 +14,12 @@
 		BFE1B11E1D77BCD4008B4347 /* QueryParamaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */; };
 		BFE1B1201D77CC84008B4347 /* LunarPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11F1D77CC84008B4347 /* LunarPhaseView.swift */; };
 		BFE1B1221D77CCDE008B4347 /* NSDate+Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1211D77CCDE008B4347 /* NSDate+Phase.swift */; };
+		BFE1B1241D78C861008B4347 /* LunarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1231D78C861008B4347 /* LunarViewModel.swift */; };
+		BFE1B1261D78CB89008B4347 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1251D78CB89008B4347 /* UIColor+Hex.swift */; };
 		F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */; };
 		F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29C1D3B1CCB00901411 /* ViewController.swift */; };
 		F11CD2A01D3B1CCC00901411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD29E1D3B1CCC00901411 /* Main.storyboard */; };
 		F11CD2A21D3B1CCC00901411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11CD2A11D3B1CCC00901411 /* Assets.xcassets */; };
-		F11CD2A51D3B1CCC00901411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */; };
 		F11CD2B01D3B1CCC00901411 /* LunaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD2AF1D3B1CCC00901411 /* LunaTests.swift */; };
 		F11CD2BB1D3B1CCC00901411 /* LunaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD2BA1D3B1CCC00901411 /* LunaUITests.swift */; };
 		F132C8451D4ED0D400A35D18 /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132C8441D4ED0D400A35D18 /* LocationTracker.swift */; };
@@ -63,12 +64,13 @@
 		BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParamaters.swift; sourceTree = "<group>"; };
 		BFE1B11F1D77CC84008B4347 /* LunarPhaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunarPhaseView.swift; sourceTree = "<group>"; };
 		BFE1B1211D77CCDE008B4347 /* NSDate+Phase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Phase.swift"; sourceTree = "<group>"; };
+		BFE1B1231D78C861008B4347 /* LunarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunarViewModel.swift; sourceTree = "<group>"; };
+		BFE1B1251D78CB89008B4347 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		F11CD2971D3B1CCB00901411 /* Luna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11CD29C1D3B1CCB00901411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F11CD29F1D3B1CCC00901411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F11CD2A11D3B1CCC00901411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F11CD2A41D3B1CCC00901411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F11CD2A61D3B1CCC00901411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F11CD2AB1D3B1CCC00901411 /* LunaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD2AF1D3B1CCC00901411 /* LunaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaTests.swift; sourceTree = "<group>"; };
@@ -151,10 +153,12 @@
 				F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */,
 				BFE1B1211D77CCDE008B4347 /* NSDate+Phase.swift */,
 				F11CD29C1D3B1CCB00901411 /* ViewController.swift */,
+				BFE1B1251D78CB89008B4347 /* UIColor+Hex.swift */,
 				F159C9691D44727200CE5D7F /* Double+WeatherIcons.swift */,
 				F159C9611D446DE900CE5D7F /* PhaseTableViewCell.xib */,
 				F159C9631D446E9800CE5D7F /* PhaseTableViewCell.swift */,
 				F173DDA61D457AA6006406E9 /* PhaseViewModel.swift */,
+				BFE1B1231D78C861008B4347 /* LunarViewModel.swift */,
 				F159C9671D44718C00CE5D7F /* String+WeatherIcons.swift */,
 				F159C95D1D445E6400CE5D7F /* LunarHeaderView.xib */,
 				F159C95F1D44627600CE5D7F /* LunarHeaderView.swift */,
@@ -163,7 +167,6 @@
 				F173DDA81D45930B006406E9 /* Result.swift */,
 				F173DDAA1D459401006406E9 /* NetworkError.swift */,
 				F11CD2A11D3B1CCC00901411 /* Assets.xcassets */,
-				F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */,
 				F11CD2A61D3B1CCC00901411 /* Info.plist */,
 				F159C95B1D444FE700CE5D7F /* PhasesDataSource.swift */,
 				F132C8441D4ED0D400A35D18 /* LocationTracker.swift */,
@@ -259,6 +262,7 @@
 				TargetAttributes = {
 					F11CD2961D3B1CCB00901411 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F9B5D8B64K;
 					};
 					F11CD2AA1D3B1CCC00901411 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -295,7 +299,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11CD2A51D3B1CCC00901411 /* LaunchScreen.storyboard in Resources */,
 				F159C9621D446DE900CE5D7F /* PhaseTableViewCell.xib in Resources */,
 				F159C9661D446FD300CE5D7F /* weathericons-regular-webfont.ttf in Resources */,
 				F11CD2A21D3B1CCC00901411 /* Assets.xcassets in Resources */,
@@ -327,9 +330,11 @@
 			files = (
 				F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */,
 				BFE1B1201D77CC84008B4347 /* LunarPhaseView.swift in Sources */,
+				BFE1B1261D78CB89008B4347 /* UIColor+Hex.swift in Sources */,
 				F173DDA71D457AA6006406E9 /* PhaseViewModel.swift in Sources */,
 				F173DDA31D45789F006406E9 /* Moon.swift in Sources */,
 				F159C9641D446E9800CE5D7F /* PhaseTableViewCell.swift in Sources */,
+				BFE1B1241D78C861008B4347 /* LunarViewModel.swift in Sources */,
 				F159C9681D44718C00CE5D7F /* String+WeatherIcons.swift in Sources */,
 				BFE1B1161D765FF1008B4347 /* NetworkController.swift in Sources */,
 				BFE1B11E1D77BCD4008B4347 /* QueryParamaters.swift in Sources */,
@@ -387,14 +392,6 @@
 				F11CD29F1D3B1CCC00901411 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F11CD2A31D3B1CCC00901411 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F11CD2A41D3B1CCC00901411 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,12 +485,16 @@
 		F11CD2C01D3B1CCC00901411 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Luna/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theScore.Luna;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zain.Luna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -501,12 +502,16 @@
 		F11CD2C11D3B1CCC00901411 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Luna/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theScore.Luna;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zain.Luna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

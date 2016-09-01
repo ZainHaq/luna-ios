@@ -29,6 +29,8 @@ class PhaseTableViewCell: UITableViewCell {
         self.iconLabel.font = UIFont(name: "Weather Icons", size: 32.0)
 
         self.selectionStyle = UITableViewCellSelectionStyle.None
+        
+        self.backgroundColor = UIColor.whiteColor()
     }
 
 }
