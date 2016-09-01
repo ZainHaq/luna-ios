@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BFE1B1161D765FF1008B4347 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1151D765FF1008B4347 /* NetworkController.swift */; };
 		BFE1B1181D775AEF008B4347 /* NSData+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1171D775AEF008B4347 /* NSData+JSON.swift */; };
+		BFE1B11A1D77B8A7008B4347 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B1191D77B8A7008B4347 /* API.swift */; };
+		BFE1B11C1D77BADD008B4347 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11B1D77BADD008B4347 /* Request.swift */; };
+		BFE1B11E1D77BCD4008B4347 /* QueryParamaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */; };
 		F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */; };
 		F11CD29D1D3B1CCB00901411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CD29C1D3B1CCB00901411 /* ViewController.swift */; };
 		F11CD2A01D3B1CCC00901411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11CD29E1D3B1CCC00901411 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 /* Begin PBXFileReference section */
 		BFE1B1151D765FF1008B4347 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		BFE1B1171D775AEF008B4347 /* NSData+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+JSON.swift"; sourceTree = "<group>"; };
+		BFE1B1191D77B8A7008B4347 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BFE1B11B1D77BADD008B4347 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParamaters.swift; sourceTree = "<group>"; };
 		F11CD2971D3B1CCB00901411 /* Luna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11CD29C1D3B1CCB00901411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 			children = (
 				F159C9651D446FD300CE5D7F /* weathericons-regular-webfont.ttf */,
 				F173DDA41D4578B7006406E9 /* Phase.swift */,
+				BFE1B1191D77B8A7008B4347 /* API.swift */,
+				BFE1B11D1D77BCD4008B4347 /* QueryParamaters.swift */,
+				BFE1B11B1D77BADD008B4347 /* Request.swift */,
 				F173DDA01D45783E006406E9 /* LunarPhaseModel.swift */,
 				F173DDA21D45789F006406E9 /* Moon.swift */,
 				F11CD29A1D3B1CCB00901411 /* AppDelegate.swift */,
@@ -316,7 +325,9 @@
 				F159C9641D446E9800CE5D7F /* PhaseTableViewCell.swift in Sources */,
 				F159C9681D44718C00CE5D7F /* String+WeatherIcons.swift in Sources */,
 				BFE1B1161D765FF1008B4347 /* NetworkController.swift in Sources */,
+				BFE1B11E1D77BCD4008B4347 /* QueryParamaters.swift in Sources */,
 				F159C96A1D44727200CE5D7F /* Double+WeatherIcons.swift in Sources */,
+				BFE1B11C1D77BADD008B4347 /* Request.swift in Sources */,
 				F173DDA91D45930B006406E9 /* Result.swift in Sources */,
 				F173DDA11D45783E006406E9 /* LunarPhaseModel.swift in Sources */,
 				F159C95C1D444FE700CE5D7F /* PhasesDataSource.swift in Sources */,
@@ -325,6 +336,7 @@
 				BFE1B1181D775AEF008B4347 /* NSData+JSON.swift in Sources */,
 				F173DDAB1D459401006406E9 /* NetworkError.swift in Sources */,
 				F159C9601D44627600CE5D7F /* LunarHeaderView.swift in Sources */,
+				BFE1B11A1D77B8A7008B4347 /* API.swift in Sources */,
 				F11CD29B1D3B1CCB00901411 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Luna/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theScore.Luna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Luna/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theScore.Luna;
 				PRODUCT_NAME = "$(TARGET_NAME)";

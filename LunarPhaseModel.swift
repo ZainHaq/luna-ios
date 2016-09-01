@@ -13,14 +13,13 @@ class LunarPhaseModel {
     // dummy data for now
 
     func currentMoon() -> Moon {
-        let moon =  Moon(phase: "full moon", age: 14, rise: NSDate(), set: NSDate())
+        let moon =  Moon("full moon", 14, 5, 5, NSDate(), NSDate())
         return moon
     }
 
     func currentPhases() -> [Phase] {
-        let phase1 = Phase(name: "first quarter", date: NSDate())
-        let phase2 = Phase(name: "full moon", date: NSDate())
-        let phase3 = Phase(name: "third quarter", date: NSDate())
-        return [phase1, phase2, phase3]
+        let phase1 = Phase("first quarter", NSDate())
+        let phase3 = Phase("third quarter", NSDate())
+        return [phase1, phase3]
     }
 }

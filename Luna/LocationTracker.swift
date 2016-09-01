@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import CoreLocation
 
 enum LocationError: ErrorType {
@@ -30,18 +31,17 @@ class LocationTracker: NSObject, CLLocationManagerDelegate {
     var currentLocation: LocationResult {
         return self.lastResult
     }
+    
+    private let locationManager: CLLocationManager
 
-    private lazy var locationManager: CLLocationManager = {
-        let locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        return locationManager
-    }()
-
-    override init() {
+    init(locationManager: CLLocationManager = CLLocationManager()) {
+        self.locationManager = locationManager
         super.init()
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
+        self.subscribeToNotifications()
     }
 
     func addLocationChangeObserver(observer: Observer) {
@@ -50,7 +50,7 @@ class LocationTracker: NSObject, CLLocationManagerDelegate {
 
     // MARK: - CLLocationManagerDelegate
 
-    internal func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status {
         case .AuthorizedWhenInUse:
             locationManager.startUpdatingLocation()
@@ -59,12 +59,12 @@ class LocationTracker: NSObject, CLLocationManagerDelegate {
         }
     }
 
-    internal func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         let result = LocationResult.Failure(NetworkError.Other)
         self.lastResult = result
     }
 
-    internal func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.first {
             if shouldUpdateWithLocation(currentLocation) {
                 let location = Location(physical: currentLocation, city: "", state: "", neighborhood: "")
@@ -94,5 +94,20 @@ class LocationTracker: NSObject, CLLocationManagerDelegate {
             observer(location: result)
         }
     }
+    
+    private func subscribeToNotifications() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleBackgroundNotification), name: UIApplicationDidEnterBackgroundNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleForegroundNotification), name: UIApplicationWillEnterForegroundNotification, object: nil)
+    }
+    
+    func handleBackgroundNotification() {
+        self.locationManager.stopUpdatingLocation()
+    }
+    
+    func handleForegroundNotification() {
+        self.locationManager.startUpdatingLocation()
+    }
+    
 
 }
